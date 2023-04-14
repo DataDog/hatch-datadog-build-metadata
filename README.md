@@ -68,12 +68,14 @@ By default, the following URLs are set:
 
 ### Example
 
+The following example assumes that the code is hosted by GitHub.
+
 - ***pyproject.toml***
 
     ```toml
     [tool.hatch.metadata.hooks.datadog-build-metadata]
     Homepage = "https://www.example.com"
-    source_archive = "https://github.com/org/repo/archive/{commit_hash}.zip"
+    source_archive = "{remote_http_url}/archive/{commit_hash}.tar.gz"
     ```
 
 - ***hatch.toml***
@@ -81,7 +83,7 @@ By default, the following URLs are set:
     ```toml
     [metadata.hooks.datadog-build-metadata]
     Homepage = "https://www.example.com"
-    source_archive = "https://github.com/org/repo/archive/{commit_hash}.zip"
+    source_archive = "{remote_http_url}/archive/{commit_hash}.tar.gz"
     ```
 
 ## License
