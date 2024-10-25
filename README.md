@@ -73,7 +73,7 @@ The following example assumes that the code is hosted by GitHub.
 - ***pyproject.toml***
 
     ```toml
-    [tool.hatch.metadata.hooks.datadog-build-metadata]
+    [tool.hatch.metadata.hooks.datadog-build-metadata.urls]
     Homepage = "https://www.example.com"
     source_archive = "{remote_http_url}/archive/{commit_hash}.tar.gz"
     ```
@@ -81,7 +81,7 @@ The following example assumes that the code is hosted by GitHub.
 - ***hatch.toml***
 
     ```toml
-    [metadata.hooks.datadog-build-metadata]
+    [metadata.hooks.datadog-build-metadata.urls]
     Homepage = "https://www.example.com"
     source_archive = "{remote_http_url}/archive/{commit_hash}.tar.gz"
     ```
